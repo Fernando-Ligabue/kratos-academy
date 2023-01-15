@@ -1,0 +1,127 @@
+footer{
+    background: var(--primary-color);
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: 0.9rem;
+    color: var(--color-gray-100);
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.logo{
+    display: block;
+    width: 18rem;
+}
+
+.footer__container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+.mt{
+    margin-top: 3.9rem;
+}
+
+.footer__container article h4{
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.footer__container article p{
+    margin-top: 0.5rem;
+}
+
+.footer__socials{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footer__socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gray-100);
+    padding: 0.7rem;
+    border: 1px solid #FFF0;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+}
+
+.footer__socials a svg{
+    color: var(--color-gray-600);
+}
+
+.footer__socials a:hover,
+.footer__socials a:hover svg{
+    border-color: var(--color-gray-100);
+    background: #FFF0;
+    color: var(--color-gray-100);
+    transition: var(--transition);
+}
+
+.footer__copytight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    color: var(--color-gray-100);
+    border-top: 2px solid var(--primary-color-variant);
+    margin-top: 5rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px){
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .footer__container > article:nth-child(3),
+    .footer__container > article:nth-child(4){
+        margin-top: 0;
+    }
+  }
+  
+
+  @media only screen and (max-width: 600px){
+    .footer__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer__container article{
+        align-items: center;
+    }
+
+    .footer__container article p {
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 369px){
+    footer{
+        width: 100%;
+    }
+    .footer__container{
+        max-width: 300px;
+    }
+
+    .footer__container article{
+        max-width: 300px;
+    }
+
+
+    .footer__socials{
+        width: 100%;
+        gap: 0.8rem;
+    }
+  }
