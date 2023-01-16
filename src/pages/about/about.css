@@ -14,7 +14,7 @@
     transform: skew(0deg);
 }
 
-.about__Section-content h1{
+.about__section-content h1{
     margin-bottom: 2rem;
 }
 
@@ -22,7 +22,7 @@
     margin-bottom: 1rem;
 }
 
-.s-container, 
+.about__story-container, 
 .about__mission-container{
     display: grid;
     align-items: center;
